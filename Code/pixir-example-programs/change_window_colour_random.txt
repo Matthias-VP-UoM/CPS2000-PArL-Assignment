@@ -1,0 +1,36 @@
+let c:colour = (__random_int 16777216);
+let cond:bool = true;
+if (cond == true){
+    __clear c;
+}
+else{
+    __clear 0;
+}
+
+
+.main
+push 2
+oframe
+push 16777216
+irnd
+push 0
+push 0
+st
+push 1
+push 1
+push 0
+st
+push 1
+push [1:0]
+eq
+push #PC+4
+cjmp
+push #PC+6
+jmp
+push [0:0]
+clear
+push #PC+4
+jmp
+push 0
+clear
+halt

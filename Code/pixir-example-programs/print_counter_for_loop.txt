@@ -1,0 +1,30 @@
+for (let counter:int = 0; counter < 10; counter = counter + 1){
+	__print counter;
+}
+
+
+.main
+push 1
+oframe
+push 0
+push 0
+push 0
+st
+push 10
+push [0:0]
+lt
+push #PC+4
+cjmp
+push #PC+12
+jmp
+push [0:0]
+print
+push [0:0]
+push 1
+add
+push 0
+push 0
+st
+push #PC-15
+jmp
+halt

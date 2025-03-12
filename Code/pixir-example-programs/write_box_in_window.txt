@@ -1,0 +1,33 @@
+let w:int = 12;
+let h:int = 15;
+let y:int = 5;
+let x:int = 3;
+__write_box x, y, w, h, #ff0000;
+
+
+.main
+push 4
+oframe
+push 12
+push 0
+push 0
+st
+push 15
+push 1
+push 0
+st
+push 5
+push 2
+push 0
+st
+push 3
+push 3
+push 0
+st
+push 16711680
+push [1:0]
+push [0:0]
+push [2:0]
+push [3:0]
+writebox
+halt

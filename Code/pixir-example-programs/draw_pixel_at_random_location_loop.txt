@@ -1,0 +1,59 @@
+for (let counter:int = 0; counter < 10; counter = counter + 1){
+    let c:colour = (__random_int 16777216); 
+    let x_1:int = (__random_int 35);
+    __print 36;
+    let x_2:int = (__random_int __width); 
+	let y: int = (__random_int __height);
+    __write x_2, y, c;
+}
+
+
+.main
+push 5
+oframe
+push 0
+push 0
+push 0
+st
+push 10
+push [0:0]
+lt
+push #PC+4
+cjmp
+push #PC+36
+jmp
+push 16777216
+irnd
+push 1
+push 0
+st
+push 35
+irnd
+push 2
+push 0
+st
+push 36
+print
+width
+irnd
+push 3
+push 0
+st
+height
+irnd
+push 4
+push 0
+st
+push [1:0]
+push [4:0]
+push [3:0]
+write
+push [0:0]
+push 1
+add
+push 0
+push 0
+st
+push #PC-39
+jmp
+halt

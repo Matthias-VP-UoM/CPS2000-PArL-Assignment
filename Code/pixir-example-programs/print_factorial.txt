@@ -1,0 +1,44 @@
+let i:int = 5;
+let ans:int = 1;
+while (i > 1){
+	ans = ans * i;
+	i = i - 1;
+}
+__print ans;
+
+
+.main
+push 2
+oframe
+push 5
+push 0
+push 0
+st
+push 1
+push 1
+push 0
+st
+push 1
+push [0:0]
+gt
+push #PC+4
+cjmp
+push #PC+16
+jmp
+push [0:0]
+push [1:0]
+mul
+push 1
+push 0
+st
+push 1
+push [0:0]
+sub
+push 0
+push 0
+st
+push #PC-19
+jmp
+push [1:0]
+print
+halt

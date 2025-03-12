@@ -1,0 +1,35 @@
+for (let y:int = 0; y < __height; y = y + 1){
+	__write 5, y, #0000ff;
+	__delay 100;
+}
+
+
+.main
+push 1
+oframe
+push 0
+push 0
+push 0
+st
+height
+push [0:0]
+lt
+push #PC+4
+cjmp
+push #PC+16
+jmp
+push 255
+push [0:0]
+push 5
+write
+push 100
+delay
+push [0:0]
+push 1
+add
+push 0
+push 0
+st
+push #PC-19
+jmp
+halt
